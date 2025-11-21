@@ -9,14 +9,8 @@ namespace DotNetFlixTerminal.Domain
       public float version {get;set;}
       public string supportedPlatforms {get;set;}="";
       
-
-      
-      public void Execute(){
-        Console.WriteLine("You are now executing this app:" +Title);
-      }
-
-      public void Download(){
-        Console.WriteLine("You are now dowloading this app:" +Title);
-      }
     }
+      
+      
+       
 }

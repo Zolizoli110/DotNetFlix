@@ -12,12 +12,6 @@ namespace DotNetFlixTerminal.Domain
       
 
       
-      public void Play(){
-        Console.WriteLine("You are now playing this game:" +Title);
-      }
-
-      public void Download(){
-        Console.WriteLine("You are now dowloading this game:" +Title);
-      }
+      
     }
 }

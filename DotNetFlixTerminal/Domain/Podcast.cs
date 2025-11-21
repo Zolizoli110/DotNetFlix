@@ -11,12 +11,6 @@ namespace DotNetFlixTerminal.Domain
       public int EpisodeNumber {get;set;}
 
       
-      public void Listen(){
-        Console.WriteLine("You are now listening to this podcast:" +Title);
-      }
-
-      public void Download(){
-        Console.WriteLine("You are now dowloading this podcast:" +Title);
-      }
+      
     }
 }

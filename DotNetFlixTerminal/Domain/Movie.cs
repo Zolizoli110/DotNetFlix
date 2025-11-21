@@ -11,12 +11,6 @@
       public int duration {get;set;}
 
       
-      public void Watch(){
-        Console.WriteLine("You are now watching this movie:" +Title);
-      }
-
-      public void Download(){
-        Console.WriteLine("You are now dowloading this movie:" +Title);
-      }
+      
     }
 }

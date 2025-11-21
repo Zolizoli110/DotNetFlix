@@ -11,12 +11,6 @@ namespace DotNetFlixTerminal.Domain
       public int duration {get;set;}
 
       
-      public void Play(){
-        Console.WriteLine("You are now listening to this song:" +Title);
-      }
-
-      public void Download(){
-        Console.WriteLine("You are now dowloading this song:" +Title);
-      }
+      
     }
 }

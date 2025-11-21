@@ -10,12 +10,6 @@ namespace DotNetFlixTerminal.Domain
       public int Resolution {get;set;}
 
       
-      public void Display(){
-        Console.WriteLine("You are now displaying this picture:" +Title);
-      }
-
-      public void Download(){
-        Console.WriteLine("You are now dowloading this picture:" +Title);
-      }
+      
     }
 }
