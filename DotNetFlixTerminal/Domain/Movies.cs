@@ -1,3 +1,5 @@
+using DotNetFlixTerminal.Data;
+
 namespace DotNetFlixTerminal.Domain
 {
     public class Movies
@@ -19,11 +21,11 @@ namespace DotNetFlixTerminal.Domain
             Movie movie = new Movie
             {
                 Title = Title,
-                director = director,
-                genres = genres,
-                releaseYear = releaseYear,
-                language = language,
-                duration = duration,
+                Director = director,
+                Genres = genres,
+                ReleaseYear = releaseYear,
+                Language = language,
+                Duration = duration,
             };
 
             MovieLibrary.Add(movie);
@@ -51,7 +53,7 @@ namespace DotNetFlixTerminal.Domain
             if (movie == null) return false;
 
             MovieLibrary.Remove(movie);
-            _dataAccess.SaveBooks(MovieLibrary);
+            _dataAccess.SaveMovies(MovieLibrary);
             return true;
         }
 
@@ -60,7 +62,7 @@ namespace DotNetFlixTerminal.Domain
             foreach (Movie b in MovieLibrary)
             {
                 if (b.Title.Equals(title, StringComparison.OrdinalIgnoreCase))
-                    return "Title: " + b.Title + " written by " + b.director + " in " + b.language + " with  length of : " + b.duration; //+ ".; It has " + b.NumberOfPages + " pages and was published in" + b.PublicationYear + ".";
+                    return "Title: " + b.Title + " written by " + b.Director + " in " + b.Language + " with  length of : " + b.Duration; //+ ".; It has " + b.NumberOfPages + " pages and was published in" + b.PublicationYear + ".";
             }
             return "Movie does not exist";
         }
