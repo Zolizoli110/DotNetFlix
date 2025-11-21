@@ -1,8 +1,10 @@
-﻿namespace DotNetFlixTerminal.Domain
+﻿using DotNetFlixTerminal.Data;
+
+namespace DotNetFlixTerminal.Domain
 {
     public class Ebooks
     {
-        private IDataAccess _dataAccess;
+        private readonly IDataAccess _dataAccess;
         private List<EBook> BookLibrary;
 
         public Ebooks(IDataAccess dataAccess)//idata
