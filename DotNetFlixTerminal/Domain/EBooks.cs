@@ -10,7 +10,7 @@ namespace DotNetFlixTerminal.Domain
         public Ebooks(IDataAccess dataAccess)//idata
         {
             _dataAccess = dataAccess;
-            BookLibrary = _dataAccess.LoadBooks();
+            BookLibrary = _dataAccess.LoadEBooks();
         }
 
         public string AddBook(string Title,string Author, string Language, string ISBN, string Address, int NumberOfPages,int PublicationYear)
@@ -55,7 +55,7 @@ namespace DotNetFlixTerminal.Domain
             if (book == null) return false;
 
             BookLibrary.Remove(book);
-            _dataAccess.SaveBooks(BookLibrary);
+            _dataAccess.SaveEBooks(BookLibrary);
             return true;
         }
 
