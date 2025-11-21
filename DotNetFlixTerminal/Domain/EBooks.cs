@@ -62,8 +62,19 @@
             foreach (EBook b in BookLibrary)
             {
                 if (b.Title.Equals(title, StringComparison.OrdinalIgnoreCase))
-                    return "Title: " + b.Title + " written by" + b.Author + "";
+                    return "Title: " + b.Title + " written by " + b.Author + " in " + b.Language + " with  ISBN: "+b.ISBN+ ". It has "+b.NumberOfPages+" pages and was published in"+b.PublicationYear + ".";
             }
+            return "Book does not exist";
+        }
+
+        public string ReadBook(string title)
+        {
+            foreach (EBook b in BookLibrary)
+            {
+                if (b.Title.Equals(title, StringComparison.OrdinalIgnoreCase))
+                    return "here you would open the pdf file of the book";
+            }
+            return "Book does not exist";
         }
 
 

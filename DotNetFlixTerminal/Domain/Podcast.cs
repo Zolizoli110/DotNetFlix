@@ -1,6 +1,6 @@
 namespace DotNetFlixTerminal.Domain
 {
-    internal class Podcast
+    public class Podcast
 
     {
       public string Title  {get;set;}="";
