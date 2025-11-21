@@ -1,6 +1,6 @@
 namespace DotNetFlixTerminal.Domain
 {
-    internal class Image
+  public class Image
 
     {
       public string Title  {get;set;}="";

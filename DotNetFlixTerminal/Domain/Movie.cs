@@ -1,16 +1,13 @@
 ﻿namespace DotNetFlixTerminal.Domain
 {
-    internal class Movie
-
+    public class Movie
     {
       public string Title  {get;set;}="";
-      public string director {get;set;}="";
-      public string genres {get;set;}="";
-      public int releaseYear {get;set;}
-      public string language {get;set;}="";
-      public int duration {get;set;}
+      public string Director {get;set;}="";
+      public string Genres {get;set;}="";
+      public int ReleaseYear {get;set;}
+      public string Language {get;set;}="";
+      public int Duration {get;set;}
 
-      
-      
     }
 }

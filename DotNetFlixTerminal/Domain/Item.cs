@@ -2,18 +2,18 @@
 {
     internal class Item
     {
-        private string Title;
-        private string Address;//not needed in terminal format
+        private string _title;
+        private string _address;//not needed in terminal format
 
         public Item(string Title, string Address)
         {
-            this.Title = Title;
-            this.Address = Address;
+            this._title = Title;
+            this._address = Address;
         }
 
         public void View()
         {
-            Console.WriteLine(Title + '\n' + Address+'\n');
+            Console.WriteLine(_title + '\n' + _address+'\n');
         }
 
         public void Download()
@@ -23,7 +23,7 @@
 
         public void Print()
         {
-            Console.WriteLine(Title + '\n' + Address + '\n');
+            Console.WriteLine(_title + '\n' + _address + '\n');
         }
 
 
