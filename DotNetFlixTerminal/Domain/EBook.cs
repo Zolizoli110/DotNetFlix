@@ -1,6 +1,6 @@
 ﻿namespace DotNetFlixTerminal.Domain
 {
-    internal class EBook
+    public class EBook
     {
         public string Title { get; set; } = "";
         public string Author { get; set; } = "";
